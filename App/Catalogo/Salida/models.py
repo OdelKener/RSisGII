@@ -1,10 +1,10 @@
 from django.db import models
 
 from App.Catalogo.TipoSalida.models import TipoSalida
-from Paises.Nicaragua.models import Sucursal
-from Paises.Panama.models import SucursalPan
-from Paises.Hondura.models import SucursalHon
-from Paises.CostaRica.models import SucursalCos
+from App.Paises.Nicaragua.models import Sucursal
+from App.Paises.Panama.models import SucursalPan
+from App.Paises.Hondura.models import SucursalHon
+from App.Paises.CostaRica.models import SucursalCos
 
 
 class Salida(models.Model):

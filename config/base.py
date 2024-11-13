@@ -46,10 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_yasg',
-  'Paises.Nicaragua',
-    'Paises.Hondura',
-    'Paises.CostaRica',
-    'Paises.Panama',
+    'App.Paises.Nicaragua',
+    'App.Paises.Hondura',
+    'App.Paises.CostaRica',
+    'App.Paises.Panama',
     'rest_framework_simplejwt',
 
 
@@ -67,6 +67,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 APPEND_SLASH =True
+
 
 TEMPLATES = [
     {
@@ -90,9 +91,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-
-
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',  # Utilizamos el backend mssql-django
@@ -106,6 +105,7 @@ DATABASES = {
         },
     }
 }
+"""
 
 
 # Password validation

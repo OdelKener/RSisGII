@@ -1,6 +1,7 @@
 
 
 import logging
+import colorlog
 
 class ANSIColorFormatter(logging.Formatter):
     COLORS = {

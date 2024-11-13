@@ -1,5 +1,9 @@
-from .base import *
+from .base import*
+from decouple import  config
+
+
 from config.utils.Logging_config import ANSIColorFormatter
+
 
 
 DEBUG = True
