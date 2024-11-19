@@ -6,7 +6,6 @@ from .ApiView import EntradaApiView
 from .ModelViewSet import EntradaViewSet
 
 from .models import Entrada
-from ...Detalles.DetalleEntrada.models import DetalleEntrada
 
 router = DefaultRouter()
 router.register(r'entrada',EntradaViewSet, basename='entrada')

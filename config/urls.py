@@ -46,7 +46,7 @@ urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  # Para obtener un token
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('Catalogos/', include('App.Catalogo.Urls')),
-    path('Detalles/', include('App.Detalles.Urls')),
+
 
     path('InventarioLibros/', include('App.InventarioLibros.Urls')),
     path('Seguridad/', include('App.Seguridad.Usuario.urls')),

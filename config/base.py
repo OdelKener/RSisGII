@@ -16,7 +16,7 @@ from datetime import timedelta
 from django.conf.global_settings import APPEND_SLASH
 
 from App.Catalogo.setting_app import SETTING_APP_CATALOGO
-from App.Detalles.setting_app import SETTING_APP_DETALLES
+
 from App.Seguridad.setting_app import SETTING_APP_SEGURIDAD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
 
-] +SETTING_APP_SEGURIDAD+SETTING_APP_CATALOGO+SETTING_APP_DETALLES
+
+] +SETTING_APP_SEGURIDAD+SETTING_APP_CATALOGO
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
